@@ -18,7 +18,7 @@
 						"type": "DatasetReference"
 					},
 					"name": "orders",
-					"script": "source(output(\n\t\t\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: true,\n\tformat: 'table') ~> orders"
+					"script": "source(output(\n\t\t\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: true,\n\tlimit: 100,\n\tbatchSize: 50,\n\tformat: 'table') ~> orders"
 				}
 			]
 		}

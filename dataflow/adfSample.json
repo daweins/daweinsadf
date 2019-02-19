@@ -6,11 +6,11 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "TempSQL",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					},
 					"name": "source1",
-					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tquery: 'SELECT * \nFROM tempData',\n\tformat: 'query') ~> source1"
+					"script": "source(output(\n\t\t\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tbatchSize: 50,\n\tformat: 'table') ~> source1"
 				}
 			]
 		}

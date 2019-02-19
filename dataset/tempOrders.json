@@ -1,0 +1,13 @@
+{
+	"name": "tempOrders",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sampleData",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"typeProperties": {
+			"tableName": "[dbo].[tempOrders]"
+		}
+	}
+}

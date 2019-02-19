@@ -6,11 +6,19 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "AzureSqlTable2",
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					},
-					"name": "user",
-					"script": "source(output(\n\t\t\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: true,\n\tbatchSize: 50,\n\tformat: 'table') ~> user"
+					"name": "userData",
+					"script": "source(output(\n\t\tid as integer,\n\t\tname as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'table') ~> userData"
+				},
+				{
+					"dataset": {
+						"referenceName": "tempOrders",
+						"type": "DatasetReference"
+					},
+					"name": "orders",
+					"script": "source(output(\n\t\t\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: true,\n\tformat: 'table') ~> orders"
 				}
 			]
 		}

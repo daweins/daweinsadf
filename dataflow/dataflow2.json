@@ -17,8 +17,8 @@
 						"referenceName": "tempOrders",
 						"type": "DatasetReference"
 					},
-					"name": "orders",
-					"script": "source(output(\n\t\t\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: true,\n\tlimit: 100,\n\tbatchSize: 50,\n\tformat: 'table') ~> orders"
+					"name": "source1",
+					"script": "source(output(\n\t\t\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'table') ~> source1"
 				}
 			]
 		}

@@ -1,0 +1,13 @@
+{
+	"name": "TempSQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLAdventureWorks",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"typeProperties": {
+			"tableName": "[dbo].[tempData]"
+		}
+	}
+}

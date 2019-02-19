@@ -1,0 +1,24 @@
+{
+	"name": "AzurePostgreSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzurePostgreSql1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzurePostgreSqlTable",
+		"structure": [
+			{
+				"name": "pid",
+				"type": "Int32"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"tableName": "\"public\".\"Test\""
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

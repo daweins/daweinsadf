@@ -1,0 +1,23 @@
+{
+	"name": "tempData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sampleData",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"structure": [
+			{
+				"name": "id",
+				"type": "Int32"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[tempData]"
+		}
+	}
+}
